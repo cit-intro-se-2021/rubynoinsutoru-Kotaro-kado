@@ -22,7 +22,7 @@
 :section-refsig:
 :chapter-refsig:
 
-NOTE: 下記文章中では、ワークスペースとして `Users\kuboaki\rubybok` といった場所を指定していますが、これは、みなさんがCloneしたリポジトリのディレクトリ名で読み替えてください。
+NOTE: 下記文章中では、ワークスペースとして `Users\magur\rubynoinsutoru-Kotaro-kado` といった場所を指定していますが、これは、みなさんがCloneしたリポジトリのディレクトリ名で読み替えてください。
 
 = Rubyをインストールする
 
@@ -49,7 +49,7 @@ Rubyのインストールが済み、演習に使うワークスペースも準�
 . 新規ファイルを作成します。ファイル名を `hello.rb` としましょう。
 .  <<hello.rb>> のように入力してみましょう。 各行の左端の数字は行番号です（入力しません）。 +
 入力するプログラムの一部ではありませんので中止しましょう。また、 `#` から始まる行はコメントです。面倒なら今回は省略してもかまいません。
-. 入力できたら、ワークスペース（わたしの場合 `C:\Users\kuboaki\rubybook` ）に保存します。
+. 入力できたら、ワークスペース（わたしの場合 `C:\Users\magur\rubynoinsutoru-Kotaro-kado` ）に保存します。
 --
 
 [[hello.rb]]
@@ -85,7 +85,7 @@ Rubyのソースコードを書くときには、文字コードは UTF-8（BOM�
 === 作成したプログラムを確認する
 
 コマンドプロンプトを開いて、ワークスペースのディレクトリへ移動します（ <<cd_workspace_03>> ）。
-このような操作を「カレントディレクトリをrubybookに変更（移動）する」といいます。
+このような操作を「カレントディレクトリをrubynoinsutoru-Kotaro-kadoに変更（移動）する」といいます。
 
 [[cd_workspace_03]]
 .【端末】ワークスペースへ移動する
@@ -93,8 +93,8 @@ Rubyのソースコードを書くときには、文字コードは UTF-8（BOM�
 --
 [source,console]
 ----
-C:\Users\kuboaki>cd rubybook
-C:\Users\kuboaki\rubybook>
+C:\Users\magur>rubynoinsutoru-Kotaro-kado
+C:\Users\magur\rubynoinsutoru-Kotaro-kado>
 ----
 --
 
@@ -109,17 +109,29 @@ C:\Users\kuboaki\rubybook>
 --
 [source,consle]
 ----
-C:\Users\kuboaki\rubybook>dir
- ドライブ C のボリューム ラベルがありません。
- ボリューム シリアル番号は 1808-7211 です
+C:\Users\magur\rubynoinsutoru-Kotaro-kado>dir
+  ドライブ C のボリューム ラベルがありません。
+ ボリューム シリアル番号は 502F-6559 です
 
- C:\Users\kuboaki\rubybook のディレクトリ
+ C:\Users\magur\rubynoinsutoru-Kotaro-kado のディレクトリ
 
-2020/04/22  13:42    <DIR>          .
-2020/04/22  13:42    <DIR>          ..
-2020/04/22  13:42               149 hello.rb
-               1 個のファイル                 149 バイト
-               2 個のディレクトリ  207,987,175,424 バイトの空き領域
+2021/04/29  11:01    <DIR>          .
+2021/04/29  11:01    <DIR>          ..
+2021/04/29  11:01    <DIR>          .github
+2021/04/29  11:01             1,261 .gitignore
+2021/04/29  11:01                40 .replit
+2021/04/29  11:01    <DIR>          css
+2021/04/29  11:10                69 hello.rb
+2021/04/29  11:01    <DIR>          images
+2021/04/29  11:01             1,180 image_size_matter.adoc
+2021/04/29  11:01            13,797 linux.adoc
+2021/04/29  11:01            13,738 macos.adoc
+2021/05/06  11:28             9,805 README.adoc
+2021/04/29  11:01               247 README.md
+2021/04/29  11:01             8,638 windows.adoc
+               9 個のファイル              48,775 バイト
+               5 個のディレクトリ  160,167,243,776 バイトの空き領域
+
 ----
 --
 
@@ -137,7 +149,7 @@ C:\Users\kuboaki\rubybook>dir
 --
 [source,console]
 ----
-C:\Users\kuboaki\rubybook>ruby hello.rb
+C:\Users\magur\rubynoinsutoru-Kotaro-kado>ruby hello.rb
 ----
 --
 
@@ -170,7 +182,7 @@ hello.rb
 --
 [source,console]
 ----
-C:\Users\kuboaki\rubybook>ruby hello.rb
+C:\Users\magur\rubynoinsutoru-Kotaro-kado>ruby hello.rb
 hello.rb:4: invalid multibyte char (UTF-8)
 hello.rb:4: invalid multibyte char (UTF-8)
 （略）
@@ -190,7 +202,7 @@ hello.rb:4: invalid multibyte char (UTF-8)
 --
 [source,console]
 ----
-C:\Users\kuboaki\rubybook>ruby hello.rb
+C:\Users\magur\rubynoinsutoru-Kotaro-kado>ruby hello.rb
 hello.rb:4: unterminated string meets end of file
 ...れが日本語の表示’
 ----
